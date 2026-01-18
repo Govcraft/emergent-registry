@@ -1,0 +1,14 @@
+# Hidden files and directories
+.*
+!.gitignore
+
+# Text files
+*.txt
+
+# Markdown files except README
+*.md
+!README.md
+
+# OS
+.DS_Store
+Thumbs.db
