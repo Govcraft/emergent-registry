@@ -66,11 +66,3 @@ description = "Execute shell commands and emit output as events"
 publishes = ["exec.output", "exec.error", "exec.exit"]
 tags = ["exec", "shell", "command"]
 
-# Console Integration
-[[primitives]]
-name = "console-sink"
-version = "0.2.0"
-kind = "sink"
-description = "Output message payloads to stdout"
-subscribes = ["*"]
-tags = ["console", "debug", "logging", "stdout"]
