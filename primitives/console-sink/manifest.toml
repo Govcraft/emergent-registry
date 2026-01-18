@@ -1,0 +1,52 @@
+# Console Sink Primitive Manifest
+
+[primitive]
+name = "console-sink"
+version = "0.2.0"
+kind = "sink"
+description = "Output message payloads to stdout"
+homepage = "https://github.com/Govcraft/emergent-primitives"
+license = "MIT"
+
+[messages]
+subscribes = ["*"]
+
+# CLI Arguments
+[[args]]
+name = "subscribe"
+long = "subscribe"
+short = "s"
+required = true
+description = "Message types to subscribe to (can be specified multiple times)"
+
+[[args]]
+name = "pretty"
+long = "pretty"
+short = "p"
+env = "CONSOLE_SINK_PRETTY"
+required = false
+description = "Pretty-print JSON output"
+
+[[args]]
+name = "timestamp"
+long = "timestamp"
+short = "t"
+env = "CONSOLE_SINK_TIMESTAMP"
+required = false
+description = "Include timestamps in output"
+
+# Binary Downloads
+[binaries]
+release_url = "https://github.com/Govcraft/emergent-primitives/releases"
+
+[binaries.checksums]
+x86_64-unknown-linux-gnu = ""
+aarch64-unknown-linux-gnu = ""
+x86_64-apple-darwin = ""
+aarch64-apple-darwin = ""
+
+[binaries.targets]
+x86_64-unknown-linux-gnu = "console-sink-0.2.0-x86_64-unknown-linux-gnu.tar.gz"
+aarch64-unknown-linux-gnu = "console-sink-0.2.0-aarch64-unknown-linux-gnu.tar.gz"
+x86_64-apple-darwin = "console-sink-0.2.0-x86_64-apple-darwin.tar.gz"
+aarch64-apple-darwin = "console-sink-0.2.0-aarch64-apple-darwin.tar.gz"
