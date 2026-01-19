@@ -2,7 +2,7 @@
 
 [primitive]
 name = "console-sink"
-version = "0.2.0"
+version = "0.2.2"
 kind = "sink"
 description = "Output message payloads to stdout"
 homepage = "https://github.com/Govcraft/emergent-primitives"
@@ -46,7 +46,7 @@ x86_64-apple-darwin = ""
 aarch64-apple-darwin = ""
 
 [binaries.targets]
-x86_64-unknown-linux-gnu = "console-sink-0.2.0-x86_64-unknown-linux-gnu.tar.gz"
-aarch64-unknown-linux-gnu = "console-sink-0.2.0-aarch64-unknown-linux-gnu.tar.gz"
-x86_64-apple-darwin = "console-sink-0.2.0-x86_64-apple-darwin.tar.gz"
-aarch64-apple-darwin = "console-sink-0.2.0-aarch64-apple-darwin.tar.gz"
+x86_64-unknown-linux-gnu = "console-sink-0.2.2-x86_64-unknown-linux-gnu.tar.gz"
+aarch64-unknown-linux-gnu = "console-sink-0.2.2-aarch64-unknown-linux-gnu.tar.gz"
+x86_64-apple-darwin = "console-sink-0.2.2-x86_64-apple-darwin.tar.gz"
+aarch64-apple-darwin = "console-sink-0.2.2-aarch64-apple-darwin.tar.gz"
