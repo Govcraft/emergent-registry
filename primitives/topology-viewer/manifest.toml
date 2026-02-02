@@ -2,7 +2,7 @@
 
 [primitive]
 name = "topology-viewer"
-version = "0.3.2"
+version = "0.3.3"
 kind = "sink"
 description = "Real-time workflow visualization with D3.js force-directed graph"
 homepage = "https://github.com/Govcraft/emergent-primitives"
@@ -31,7 +31,7 @@ x86_64-apple-darwin = ""
 aarch64-apple-darwin = ""
 
 [binaries.targets]
-x86_64-unknown-linux-gnu = "topology-viewer-0.3.2-x86_64-unknown-linux-gnu.tar.gz"
-aarch64-unknown-linux-gnu = "topology-viewer-0.3.2-aarch64-unknown-linux-gnu.tar.gz"
-x86_64-apple-darwin = "topology-viewer-0.3.2-x86_64-apple-darwin.tar.gz"
-aarch64-apple-darwin = "topology-viewer-0.3.2-aarch64-apple-darwin.tar.gz"
+x86_64-unknown-linux-gnu = "topology-viewer-0.3.3-x86_64-unknown-linux-gnu.tar.gz"
+aarch64-unknown-linux-gnu = "topology-viewer-0.3.3-aarch64-unknown-linux-gnu.tar.gz"
+x86_64-apple-darwin = "topology-viewer-0.3.3-x86_64-apple-darwin.tar.gz"
+aarch64-apple-darwin = "topology-viewer-0.3.3-aarch64-apple-darwin.tar.gz"
