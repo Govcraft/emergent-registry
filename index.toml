@@ -78,7 +78,7 @@ tags = ["console", "debug", "logging", "stdout"]
 # Visualization
 [[primitives]]
 name = "topology-viewer"
-version = "0.3.3"
+version = "0.3.4"
 kind = "sink"
 runtime = "deno"
 description = "Real-time workflow visualization with D3.js force-directed graph"
