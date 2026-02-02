@@ -5,7 +5,7 @@ name = "topology-viewer"
 version = "0.3.2"
 kind = "sink"
 description = "Real-time workflow visualization with D3.js force-directed graph"
-homepage = "https://github.com/govcraft/emergent-primitives"
+homepage = "https://github.com/Govcraft/emergent-primitives"
 license = "MIT"
 runtime = "deno"
 
@@ -22,7 +22,7 @@ description = "HTTP port to serve the visualization (default: 8080)"
 
 # Binary Downloads
 [binaries]
-release_url = "https://github.com/govcraft/emergent-primitives/releases"
+release_url = "https://github.com/Govcraft/emergent-primitives/releases"
 
 [binaries.checksums]
 x86_64-unknown-linux-gnu = ""
