@@ -1,0 +1,43 @@
+# Exec Sink Primitive Manifest
+
+[primitive]
+name = "exec-sink"
+version = "0.4.0"
+kind = "sink"
+description = "Pipe event payloads through any executable (fire-and-forget)"
+homepage = "https://github.com/govcraft/emergent-primitives"
+license = "MIT"
+
+[messages]
+subscribes = ["*"]
+
+# CLI Arguments
+[[args]]
+name = "subscribe"
+long = "subscribe"
+short = "s"
+required = true
+description = "Message types to subscribe to (can be repeated)"
+
+[[args]]
+name = "timeout"
+long = "timeout"
+short = "t"
+required = false
+description = "Per-execution timeout in milliseconds (default: 30000)"
+
+# Binary Downloads
+[binaries]
+release_url = "https://github.com/Govcraft/emergent-primitives/releases"
+
+[binaries.checksums]
+x86_64-unknown-linux-gnu = ""
+aarch64-unknown-linux-gnu = ""
+x86_64-apple-darwin = ""
+aarch64-apple-darwin = ""
+
+[binaries.targets]
+x86_64-unknown-linux-gnu = "exec-sink-0.4.0-x86_64-unknown-linux-gnu.tar.gz"
+aarch64-unknown-linux-gnu = "exec-sink-0.4.0-aarch64-unknown-linux-gnu.tar.gz"
+x86_64-apple-darwin = "exec-sink-0.4.0-x86_64-apple-darwin.tar.gz"
+aarch64-apple-darwin = "exec-sink-0.4.0-aarch64-apple-darwin.tar.gz"

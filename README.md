@@ -18,9 +18,8 @@ emergent-registry/
 |------|------|-------------|
 | http-source | source | Generic HTTP webhook receiver |
 | exec-source | source | Execute shell commands and emit output as events |
-| exec-handler | handler | Pipe event payloads through any executable |
-| console-sink | sink | Output message payloads to stdout |
-| http-sink | sink | Make outbound HTTP requests |
+| exec-handler | handler | Pipe event payloads through any executable and publish results |
+| exec-sink | sink | Pipe event payloads through any executable (fire-and-forget) |
 | topology-viewer | sink | Real-time D3.js workflow visualization |
 
 ## Usage
@@ -29,7 +28,7 @@ Install primitives with the Emergent CLI:
 
 ```bash
 emergent marketplace list
-emergent marketplace install http-source
+emergent marketplace install exec-sink
 emergent marketplace info exec-handler
 ```
 

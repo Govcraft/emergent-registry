@@ -9,24 +9,16 @@ description = "Official Emergent primitives registry"
 # HTTP Integration
 [[primitives]]
 name = "http-source"
-version = "0.3.11"
+version = "0.4.0"
 kind = "source"
 description = "Generic HTTP webhook receiver"
 publishes = ["http.request"]
 tags = ["http", "webhooks", "api"]
 
-[[primitives]]
-name = "http-sink"
-version = "0.3.11"
-kind = "sink"
-description = "Make outbound HTTP requests"
-subscribes = ["*"]
-tags = ["http", "api", "requests"]
-
 # Exec Integration
 [[primitives]]
 name = "exec-source"
-version = "0.3.11"
+version = "0.4.0"
 kind = "source"
 description = "Execute shell commands and emit output as events"
 publishes = ["exec.output", "exec.error", "exec.exit"]
@@ -34,29 +26,17 @@ tags = ["exec", "shell", "command"]
 
 [[primitives]]
 name = "exec-handler"
-version = "0.3.11"
+version = "0.4.0"
 kind = "handler"
-description = "Subscribe to events, pipe payloads through an executable, publish results"
+description = "Pipe event payloads through any executable and publish results"
 subscribes = ["*"]
 publishes = ["exec.output", "exec.error"]
 tags = ["exec", "shell", "command", "transform"]
 
-# Console Integration
 [[primitives]]
-name = "console-sink"
-version = "0.3.11"
+name = "exec-sink"
+version = "0.4.0"
 kind = "sink"
-description = "Output message payloads to stdout"
+description = "Pipe event payloads through any executable (fire-and-forget)"
 subscribes = ["*"]
-tags = ["console", "debug", "logging", "stdout"]
-
-# Visualization
-[[primitives]]
-name = "topology-viewer"
-version = "0.3.11"
-kind = "sink"
-runtime = "deno"
-description = "Real-time workflow visualization with D3.js force-directed graph"
-subscribes = ["system.started.*", "system.stopped.*", "system.error.*", "system.response.topology"]
-tags = ["visualization", "monitoring", "dashboard", "d3"]
-
+tags = ["exec", "shell", "command", "console", "output"]
