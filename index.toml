@@ -40,3 +40,12 @@ kind = "sink"
 description = "Pipe event payloads through any executable (fire-and-forget)"
 subscribes = ["*"]
 tags = ["exec", "shell", "command", "console", "output"]
+
+# Visualization
+[[primitives]]
+name = "topology-viewer"
+version = "0.4.2"
+kind = "sink"
+description = "Real-time workflow visualization with D3.js force-directed graph"
+subscribes = ["system.started.*", "system.stopped.*", "system.error.*", "system.response.topology"]
+tags = ["visualization", "monitoring", "dashboard", "d3"]
