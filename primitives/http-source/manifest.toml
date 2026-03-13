@@ -2,7 +2,7 @@
 
 [primitive]
 name = "http-source"
-version = "0.3.6"
+version = "0.3.7"
 kind = "source"
 description = "Generic HTTP webhook receiver"
 homepage = "https://github.com/Govcraft/emergent-primitives"
@@ -52,8 +52,8 @@ aarch64-apple-darwin = ""
 x86_64-pc-windows-msvc = ""
 
 [binaries.targets]
-x86_64-unknown-linux-gnu = "http-source-0.3.6-x86_64-unknown-linux-gnu.tar.gz"
-aarch64-unknown-linux-gnu = "http-source-0.3.6-aarch64-unknown-linux-gnu.tar.gz"
-x86_64-apple-darwin = "http-source-0.3.6-x86_64-apple-darwin.tar.gz"
-aarch64-apple-darwin = "http-source-0.3.6-aarch64-apple-darwin.tar.gz"
-x86_64-pc-windows-msvc = "http-source-0.3.6-x86_64-pc-windows-msvc.zip"
+x86_64-unknown-linux-gnu = "http-source-0.3.7-x86_64-unknown-linux-gnu.tar.gz"
+aarch64-unknown-linux-gnu = "http-source-0.3.7-aarch64-unknown-linux-gnu.tar.gz"
+x86_64-apple-darwin = "http-source-0.3.7-x86_64-apple-darwin.tar.gz"
+aarch64-apple-darwin = "http-source-0.3.7-aarch64-apple-darwin.tar.gz"
+x86_64-pc-windows-msvc = "http-source-0.3.7-x86_64-pc-windows-msvc.zip"

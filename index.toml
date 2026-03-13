@@ -43,7 +43,7 @@ tags = ["github", "git", "vcs"]
 # HTTP Integration
 [[primitives]]
 name = "http-source"
-version = "0.3.6"
+version = "0.3.7"
 kind = "source"
 description = "Generic HTTP webhook receiver"
 publishes = ["http.request"]
