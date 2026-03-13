@@ -2,7 +2,7 @@
 
 [primitive]
 name = "http-sink"
-version = "0.3.7"
+version = "0.3.8"
 kind = "sink"
 description = "Make outbound HTTP requests"
 homepage = "https://github.com/Govcraft/emergent-primitives"
@@ -53,8 +53,8 @@ aarch64-apple-darwin = ""
 x86_64-pc-windows-msvc = ""
 
 [binaries.targets]
-x86_64-unknown-linux-gnu = "http-sink-0.3.7-x86_64-unknown-linux-gnu.tar.gz"
-aarch64-unknown-linux-gnu = "http-sink-0.3.7-aarch64-unknown-linux-gnu.tar.gz"
-x86_64-apple-darwin = "http-sink-0.3.7-x86_64-apple-darwin.tar.gz"
-aarch64-apple-darwin = "http-sink-0.3.7-aarch64-apple-darwin.tar.gz"
-x86_64-pc-windows-msvc = "http-sink-0.3.7-x86_64-pc-windows-msvc.zip"
+x86_64-unknown-linux-gnu = "http-sink-0.3.8-x86_64-unknown-linux-gnu.tar.gz"
+aarch64-unknown-linux-gnu = "http-sink-0.3.8-aarch64-unknown-linux-gnu.tar.gz"
+x86_64-apple-darwin = "http-sink-0.3.8-x86_64-apple-darwin.tar.gz"
+aarch64-apple-darwin = "http-sink-0.3.8-aarch64-apple-darwin.tar.gz"
+x86_64-pc-windows-msvc = "http-sink-0.3.8-x86_64-pc-windows-msvc.zip"
