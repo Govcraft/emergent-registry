@@ -2,7 +2,7 @@
 
 [primitive]
 name = "slack-sink"
-version = "0.3.9"
+version = "0.3.10"
 kind = "sink"
 description = "Post messages to Slack channels"
 homepage = "https://github.com/Govcraft/emergent-primitives"
@@ -39,8 +39,8 @@ aarch64-apple-darwin = ""
 x86_64-pc-windows-msvc = ""
 
 [binaries.targets]
-x86_64-unknown-linux-gnu = "slack-sink-0.3.9-x86_64-unknown-linux-gnu.tar.gz"
-aarch64-unknown-linux-gnu = "slack-sink-0.3.9-aarch64-unknown-linux-gnu.tar.gz"
-x86_64-apple-darwin = "slack-sink-0.3.9-x86_64-apple-darwin.tar.gz"
-aarch64-apple-darwin = "slack-sink-0.3.9-aarch64-apple-darwin.tar.gz"
-x86_64-pc-windows-msvc = "slack-sink-0.3.9-x86_64-pc-windows-msvc.zip"
+x86_64-unknown-linux-gnu = "slack-sink-0.3.10-x86_64-unknown-linux-gnu.tar.gz"
+aarch64-unknown-linux-gnu = "slack-sink-0.3.10-aarch64-unknown-linux-gnu.tar.gz"
+x86_64-apple-darwin = "slack-sink-0.3.10-x86_64-apple-darwin.tar.gz"
+aarch64-apple-darwin = "slack-sink-0.3.10-aarch64-apple-darwin.tar.gz"
+x86_64-pc-windows-msvc = "slack-sink-0.3.10-x86_64-pc-windows-msvc.zip"
