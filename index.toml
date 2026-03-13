@@ -68,7 +68,7 @@ tags = ["exec", "shell", "command"]
 
 [[primitives]]
 name = "exec-handler"
-version = "0.3.5"
+version = "0.3.7"
 kind = "handler"
 description = "Subscribe to events, pipe payloads through an executable, publish results"
 subscribes = ["*"]
@@ -78,7 +78,7 @@ tags = ["exec", "shell", "command", "transform"]
 # Console Integration
 [[primitives]]
 name = "console-sink"
-version = "0.2.2"
+version = "0.3.7"
 kind = "sink"
 description = "Output message payloads to stdout"
 subscribes = ["*"]
