@@ -2,7 +2,7 @@
 
 [primitive]
 name = "github-sink"
-version = "0.3.10"
+version = "0.3.11"
 kind = "sink"
 description = "Interact with GitHub - create comments, labels, and status checks"
 homepage = "https://github.com/Govcraft/emergent-primitives"
@@ -46,8 +46,8 @@ aarch64-apple-darwin = ""
 x86_64-pc-windows-msvc = ""
 
 [binaries.targets]
-x86_64-unknown-linux-gnu = "github-sink-0.3.10-x86_64-unknown-linux-gnu.tar.gz"
-aarch64-unknown-linux-gnu = "github-sink-0.3.10-aarch64-unknown-linux-gnu.tar.gz"
-x86_64-apple-darwin = "github-sink-0.3.10-x86_64-apple-darwin.tar.gz"
-aarch64-apple-darwin = "github-sink-0.3.10-aarch64-apple-darwin.tar.gz"
-x86_64-pc-windows-msvc = "github-sink-0.3.10-x86_64-pc-windows-msvc.zip"
+x86_64-unknown-linux-gnu = "github-sink-0.3.11-x86_64-unknown-linux-gnu.tar.gz"
+aarch64-unknown-linux-gnu = "github-sink-0.3.11-aarch64-unknown-linux-gnu.tar.gz"
+x86_64-apple-darwin = "github-sink-0.3.11-x86_64-apple-darwin.tar.gz"
+aarch64-apple-darwin = "github-sink-0.3.11-aarch64-apple-darwin.tar.gz"
+x86_64-pc-windows-msvc = "github-sink-0.3.11-x86_64-pc-windows-msvc.zip"
