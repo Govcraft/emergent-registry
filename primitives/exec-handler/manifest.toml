@@ -33,3 +33,21 @@ long = "timeout"
 short = "t"
 required = false
 description = "Per-execution timeout in milliseconds (default: 30000)"
+
+# Binary Downloads
+[binaries]
+release_url = "https://github.com/Govcraft/emergent-primitives/releases"
+
+[binaries.checksums]
+x86_64-unknown-linux-gnu = ""
+aarch64-unknown-linux-gnu = ""
+x86_64-apple-darwin = ""
+aarch64-apple-darwin = ""
+x86_64-pc-windows-msvc = ""
+
+[binaries.targets]
+x86_64-unknown-linux-gnu = "exec-handler-0.1.0-x86_64-unknown-linux-gnu.tar.gz"
+aarch64-unknown-linux-gnu = "exec-handler-0.1.0-aarch64-unknown-linux-gnu.tar.gz"
+x86_64-apple-darwin = "exec-handler-0.1.0-x86_64-apple-darwin.tar.gz"
+aarch64-apple-darwin = "exec-handler-0.1.0-aarch64-apple-darwin.tar.gz"
+x86_64-pc-windows-msvc = "exec-handler-0.1.0-x86_64-pc-windows-msvc.zip"
