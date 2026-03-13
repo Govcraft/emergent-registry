@@ -6,15 +6,43 @@ Official registry of Emergent primitives for the marketplace.
 
 ```
 emergent-registry/
-├── registry.toml              # Index of all primitives
+├── index.toml                 # Index of all primitives
 └── primitives/
     └── <name>/
         └── manifest.toml      # Detailed manifest for each primitive
 ```
 
+## Available Primitives
+
+| Name | Kind | Description |
+|------|------|-------------|
+| http-source | source | Generic HTTP webhook receiver |
+| exec-source | source | Execute shell commands and emit output as events |
+| exec-handler | handler | Pipe event payloads through any executable |
+| console-sink | sink | Output message payloads to stdout |
+| http-sink | sink | Make outbound HTTP requests |
+| topology-viewer | sink | Real-time D3.js workflow visualization |
+
+## Usage
+
+Install primitives with the Emergent CLI:
+
+```bash
+emergent marketplace list
+emergent marketplace install http-source
+emergent marketplace info exec-handler
+```
+
+Configure the registry URL in `~/.config/emergent/marketplace.toml`:
+
+```toml
+[registry]
+url = "https://raw.githubusercontent.com/Govcraft/emergent-registry/main"
+```
+
 ## Registry Schema
 
-### registry.toml
+### index.toml
 
 ```toml
 [registry]
@@ -62,33 +90,4 @@ x86_64-unknown-linux-gnu = "sha256:..."
 
 [binaries.targets]
 x86_64-unknown-linux-gnu = "example-0.1.0-x86_64-unknown-linux-gnu.tar.gz"
-```
-
-## Available Primitives
-
-| Name | Kind | Description |
-|------|------|-------------|
-| slack-source | source | Monitor Slack channels |
-| slack-sink | sink | Post to Slack channels |
-| github-source | source | GitHub webhook receiver |
-| github-sink | sink | GitHub API interactions |
-| http-source | source | Generic webhook receiver |
-| http-sink | sink | Make HTTP requests |
-| exec-source | source | Execute shell commands |
-
-## Usage
-
-Configure the registry URL in `~/.config/emergent/marketplace.toml`:
-
-```toml
-[registry]
-url = "https://raw.githubusercontent.com/Govcraft/emergent-registry/main"
-```
-
-Then use the marketplace CLI:
-
-```bash
-emergent marketplace list
-emergent marketplace install http-source
-emergent marketplace info slack-source
 ```

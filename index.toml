@@ -6,40 +6,6 @@ name = "emergent-official"
 version = "1.0.0"
 description = "Official Emergent primitives registry"
 
-# Slack Integration
-[[primitives]]
-name = "slack-source"
-version = "0.3.11"
-kind = "source"
-description = "Monitor Slack channels for messages, reactions, and threads"
-publishes = ["slack.message", "slack.reaction", "slack.thread"]
-tags = ["slack", "chat", "messaging"]
-
-[[primitives]]
-name = "slack-sink"
-version = "0.3.11"
-kind = "sink"
-description = "Post messages to Slack channels"
-subscribes = ["*"]
-tags = ["slack", "chat", "messaging"]
-
-# GitHub Integration
-[[primitives]]
-name = "github-source"
-version = "0.3.11"
-kind = "source"
-description = "Receive GitHub webhooks for PRs, issues, and pushes"
-publishes = ["github.pull_request", "github.issue", "github.push", "github.release"]
-tags = ["github", "git", "vcs", "webhooks"]
-
-[[primitives]]
-name = "github-sink"
-version = "0.3.11"
-kind = "sink"
-description = "Interact with GitHub - create comments, labels, and status checks"
-subscribes = ["*"]
-tags = ["github", "git", "vcs"]
-
 # HTTP Integration
 [[primitives]]
 name = "http-source"
