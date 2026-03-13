@@ -1,0 +1,36 @@
+# WebSocket Handler Primitive Manifest
+
+[primitive]
+name = "websocket-handler"
+version = "0.5.0"
+kind = "handler"
+description = "Bidirectional WebSocket bridge for Emergent pipelines"
+homepage = "https://github.com/Govcraft/emergent-primitives"
+license = "MIT"
+
+[messages]
+subscribes = ["ws.connect", "ws.send", "ws.disconnect"]
+publishes = ["ws.connected", "ws.frame", "ws.closed", "ws.error"]
+
+# CLI Arguments
+[[args]]
+name = "prefix"
+long = "prefix"
+required = false
+description = "Message type prefix (default: ws)"
+
+# Binary Downloads
+[binaries]
+release_url = "https://github.com/Govcraft/emergent-primitives/releases"
+
+[binaries.checksums]
+x86_64-unknown-linux-gnu = ""
+aarch64-unknown-linux-gnu = ""
+x86_64-apple-darwin = ""
+aarch64-apple-darwin = ""
+
+[binaries.targets]
+x86_64-unknown-linux-gnu = "websocket-handler-0.5.0-x86_64-unknown-linux-gnu.tar.gz"
+aarch64-unknown-linux-gnu = "websocket-handler-0.5.0-aarch64-unknown-linux-gnu.tar.gz"
+x86_64-apple-darwin = "websocket-handler-0.5.0-x86_64-apple-darwin.tar.gz"
+aarch64-apple-darwin = "websocket-handler-0.5.0-aarch64-apple-darwin.tar.gz"

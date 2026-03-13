@@ -9,7 +9,7 @@ description = "Official Emergent primitives registry"
 # HTTP Integration
 [[primitives]]
 name = "http-source"
-version = "0.4.2"
+version = "0.5.0"
 kind = "source"
 description = "Generic HTTP webhook receiver"
 publishes = ["http.request"]
@@ -18,7 +18,7 @@ tags = ["http", "webhooks", "api"]
 # Exec Integration
 [[primitives]]
 name = "exec-source"
-version = "0.4.2"
+version = "0.5.0"
 kind = "source"
 description = "Execute shell commands and emit output as events"
 publishes = ["exec.output", "exec.error", "exec.exit"]
@@ -26,7 +26,7 @@ tags = ["exec", "shell", "command"]
 
 [[primitives]]
 name = "exec-handler"
-version = "0.4.2"
+version = "0.5.0"
 kind = "handler"
 description = "Pipe event payloads through any executable and publish results"
 subscribes = ["*"]
@@ -35,7 +35,7 @@ tags = ["exec", "shell", "command", "transform"]
 
 [[primitives]]
 name = "exec-sink"
-version = "0.4.2"
+version = "0.5.0"
 kind = "sink"
 description = "Pipe event payloads through any executable (fire-and-forget)"
 subscribes = ["*"]
@@ -44,8 +44,18 @@ tags = ["exec", "shell", "command", "console", "output"]
 # Visualization
 [[primitives]]
 name = "topology-viewer"
-version = "0.4.2"
+version = "0.5.0"
 kind = "sink"
 description = "Real-time workflow visualization with D3.js force-directed graph"
 subscribes = ["system.started.*", "system.stopped.*", "system.error.*", "system.response.topology"]
 tags = ["visualization", "monitoring", "dashboard", "d3"]
+
+# WebSocket Integration
+[[primitives]]
+name = "websocket-handler"
+version = "0.5.0"
+kind = "handler"
+description = "Bidirectional WebSocket bridge for Emergent pipelines"
+subscribes = ["ws.connect", "ws.send", "ws.disconnect"]
+publishes = ["ws.connected", "ws.frame", "ws.closed", "ws.error"]
+tags = ["websocket", "ws", "realtime", "bidirectional"]
