@@ -2,7 +2,7 @@
 
 [primitive]
 name = "exec-sink"
-version = "0.5.2"
+version = "0.6.0"
 kind = "sink"
 description = "Pipe event payloads through any executable (fire-and-forget)"
 homepage = "https://github.com/govcraft/emergent-primitives"
@@ -37,7 +37,7 @@ x86_64-apple-darwin = ""
 aarch64-apple-darwin = ""
 
 [binaries.targets]
-x86_64-unknown-linux-gnu = "exec-sink-0.5.2-x86_64-unknown-linux-gnu.tar.gz"
-aarch64-unknown-linux-gnu = "exec-sink-0.5.2-aarch64-unknown-linux-gnu.tar.gz"
-x86_64-apple-darwin = "exec-sink-0.5.2-x86_64-apple-darwin.tar.gz"
-aarch64-apple-darwin = "exec-sink-0.5.2-aarch64-apple-darwin.tar.gz"
+x86_64-unknown-linux-gnu = "exec-sink-0.6.0-x86_64-unknown-linux-gnu.tar.gz"
+aarch64-unknown-linux-gnu = "exec-sink-0.6.0-aarch64-unknown-linux-gnu.tar.gz"
+x86_64-apple-darwin = "exec-sink-0.6.0-x86_64-apple-darwin.tar.gz"
+aarch64-apple-darwin = "exec-sink-0.6.0-aarch64-apple-darwin.tar.gz"

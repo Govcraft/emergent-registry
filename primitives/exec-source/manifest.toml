@@ -2,7 +2,7 @@
 
 [primitive]
 name = "exec-source"
-version = "0.5.2"
+version = "0.6.0"
 kind = "source"
 description = "Execute shell commands and emit output as events"
 homepage = "https://github.com/Govcraft/emergent-primitives"
@@ -59,8 +59,8 @@ aarch64-apple-darwin = ""
 x86_64-pc-windows-msvc = ""
 
 [binaries.targets]
-x86_64-unknown-linux-gnu = "exec-source-0.5.2-x86_64-unknown-linux-gnu.tar.gz"
-aarch64-unknown-linux-gnu = "exec-source-0.5.2-aarch64-unknown-linux-gnu.tar.gz"
-x86_64-apple-darwin = "exec-source-0.5.2-x86_64-apple-darwin.tar.gz"
-aarch64-apple-darwin = "exec-source-0.5.2-aarch64-apple-darwin.tar.gz"
-x86_64-pc-windows-msvc = "exec-source-0.5.2-x86_64-pc-windows-msvc.zip"
+x86_64-unknown-linux-gnu = "exec-source-0.6.0-x86_64-unknown-linux-gnu.tar.gz"
+aarch64-unknown-linux-gnu = "exec-source-0.6.0-aarch64-unknown-linux-gnu.tar.gz"
+x86_64-apple-darwin = "exec-source-0.6.0-x86_64-apple-darwin.tar.gz"
+aarch64-apple-darwin = "exec-source-0.6.0-aarch64-apple-darwin.tar.gz"
+x86_64-pc-windows-msvc = "exec-source-0.6.0-x86_64-pc-windows-msvc.zip"
