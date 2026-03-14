@@ -2,7 +2,7 @@
 
 [primitive]
 name = "sse-sink"
-version = "0.6.0"
+version = "0.6.1"
 kind = "sink"
 description = "Push pipeline events to browsers via Server-Sent Events"
 homepage = "https://github.com/Govcraft/emergent-primitives"

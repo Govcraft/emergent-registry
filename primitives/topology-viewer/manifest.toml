@@ -2,7 +2,7 @@
 
 [primitive]
 name = "topology-viewer"
-version = "0.6.0"
+version = "0.6.1"
 kind = "sink"
 description = "Real-time workflow visualization with D3.js force-directed graph"
 homepage = "https://github.com/Govcraft/emergent-primitives"

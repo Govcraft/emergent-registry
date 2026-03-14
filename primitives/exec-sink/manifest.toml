@@ -2,7 +2,7 @@
 
 [primitive]
 name = "exec-sink"
-version = "0.6.0"
+version = "0.6.1"
 kind = "sink"
 description = "Pipe event payloads through any executable (fire-and-forget)"
 homepage = "https://github.com/govcraft/emergent-primitives"
