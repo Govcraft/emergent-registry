@@ -44,7 +44,7 @@ tags = ["exec", "shell", "command", "console", "output"]
 # SSE (Server-Sent Events)
 [[primitives]]
 name = "sse-sink"
-version = "0.6.1"
+version = "0.7.0"
 kind = "sink"
 description = "Push pipeline events to browsers via Server-Sent Events"
 subscribes = ["*"]
@@ -53,7 +53,7 @@ tags = ["sse", "realtime", "browser", "dashboard", "monitoring"]
 # Visualization
 [[primitives]]
 name = "topology-viewer"
-version = "0.6.1"
+version = "0.7.0"
 kind = "sink"
 description = "Real-time workflow visualization with D3.js force-directed graph"
 subscribes = ["system.started.*", "system.stopped.*", "system.error.*", "system.response.topology"]
@@ -62,7 +62,7 @@ tags = ["visualization", "monitoring", "dashboard", "d3"]
 # WebSocket Integration
 [[primitives]]
 name = "websocket-handler"
-version = "0.6.1"
+version = "0.7.0"
 kind = "handler"
 description = "Bidirectional WebSocket bridge for Emergent pipelines"
 subscribes = ["ws.connect", "ws.send", "ws.disconnect"]
