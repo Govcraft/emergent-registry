@@ -2,7 +2,7 @@
 
 [primitive]
 name = "exec-handler"
-version = "0.6.1"
+version = "0.7.0"
 kind = "handler"
 description = "Subscribe to events, pipe payloads through an executable, publish results"
 homepage = "https://github.com/govcraft/emergent-primitives"

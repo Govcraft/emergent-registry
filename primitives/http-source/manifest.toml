@@ -2,7 +2,7 @@
 
 [primitive]
 name = "http-source"
-version = "0.6.1"
+version = "0.7.0"
 kind = "source"
 description = "Generic HTTP webhook receiver"
 homepage = "https://github.com/Govcraft/emergent-primitives"

@@ -2,7 +2,7 @@
 
 [primitive]
 name = "exec-source"
-version = "0.6.1"
+version = "0.7.0"
 kind = "source"
 description = "Execute shell commands and emit output as events"
 homepage = "https://github.com/Govcraft/emergent-primitives"
