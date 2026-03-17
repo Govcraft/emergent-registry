@@ -1,0 +1,60 @@
+# Stream Runner Primitive Manifest
+
+[primitive]
+name = "stream-runner"
+version = "0.8.0"
+kind = "handler"
+description = "Emit a JSON collection one item at a time, waiting for downstream ack before advancing"
+homepage = "https://github.com/govcraft/emergent-primitives"
+license = "MIT"
+
+[messages]
+subscribes = ["stream.load", "stream.ack"]
+publishes = ["stream.item", "stream.end"]
+
+# CLI Arguments
+[[args]]
+name = "load-topic"
+long = "load-topic"
+required = false
+description = "Event carrying the JSON collection to stream (default: stream.load)"
+
+[[args]]
+name = "publish-as"
+long = "publish-as"
+required = false
+description = "Topic on which to emit each item (default: stream.item)"
+
+[[args]]
+name = "ack-topic"
+long = "ack-topic"
+required = false
+description = "Topic to wait for before advancing to the next item (default: stream.ack)"
+
+[[args]]
+name = "end-topic"
+long = "end-topic"
+required = false
+description = "Topic published when the collection is exhausted (default: stream.end)"
+
+[[args]]
+name = "items-key"
+long = "items-key"
+required = false
+description = "JSON object key containing the array to stream (default: items)"
+
+# Binary Downloads
+[binaries]
+release_url = "https://github.com/Govcraft/emergent-primitives/releases"
+
+[binaries.checksums]
+x86_64-unknown-linux-gnu = ""
+aarch64-unknown-linux-gnu = ""
+x86_64-apple-darwin = ""
+aarch64-apple-darwin = ""
+
+[binaries.targets]
+x86_64-unknown-linux-gnu = "stream-runner-0.8.0-x86_64-unknown-linux-gnu.tar.gz"
+aarch64-unknown-linux-gnu = "stream-runner-0.8.0-aarch64-unknown-linux-gnu.tar.gz"
+x86_64-apple-darwin = "stream-runner-0.8.0-x86_64-apple-darwin.tar.gz"
+aarch64-apple-darwin = "stream-runner-0.8.0-aarch64-apple-darwin.tar.gz"
