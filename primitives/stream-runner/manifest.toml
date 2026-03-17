@@ -2,7 +2,7 @@
 
 [primitive]
 name = "stream-runner"
-version = "0.8.0"
+version = "0.8.1"
 kind = "handler"
 description = "Emit a JSON collection one item at a time, waiting for downstream ack before advancing"
 homepage = "https://github.com/govcraft/emergent-primitives"
