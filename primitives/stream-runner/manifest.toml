@@ -2,7 +2,7 @@
 
 [primitive]
 name = "stream-runner"
-version = "0.8.1"
+version = "0.8.2"
 kind = "handler"
 description = "Emit a JSON collection one item at a time, waiting for downstream ack before advancing"
 homepage = "https://github.com/govcraft/emergent-primitives"
@@ -54,7 +54,7 @@ x86_64-apple-darwin = ""
 aarch64-apple-darwin = ""
 
 [binaries.targets]
-x86_64-unknown-linux-gnu = "stream-runner-0.8.1-x86_64-unknown-linux-gnu.tar.gz"
-aarch64-unknown-linux-gnu = "stream-runner-0.8.1-aarch64-unknown-linux-gnu.tar.gz"
-x86_64-apple-darwin = "stream-runner-0.8.1-x86_64-apple-darwin.tar.gz"
-aarch64-apple-darwin = "stream-runner-0.8.1-aarch64-apple-darwin.tar.gz"
+x86_64-unknown-linux-gnu = "stream-runner-0.8.2-x86_64-unknown-linux-gnu.tar.gz"
+aarch64-unknown-linux-gnu = "stream-runner-0.8.2-aarch64-unknown-linux-gnu.tar.gz"
+x86_64-apple-darwin = "stream-runner-0.8.2-x86_64-apple-darwin.tar.gz"
+aarch64-apple-darwin = "stream-runner-0.8.2-aarch64-apple-darwin.tar.gz"
